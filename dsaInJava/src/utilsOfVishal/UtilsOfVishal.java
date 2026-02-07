@@ -14,4 +14,16 @@ public class UtilsOfVishal {
         }
     }
 
+    public static void reverseArray(int[] nums, int i, int j) {
+        if (i >= j)
+            return;
+
+        // we are in valid boundary
+        while (i < j) {
+            swap(nums, i, j);
+            i++;
+            j--;
+        }
+    }
+
 }

@@ -1,14 +1,17 @@
-import utilsOfVishal.SortOfVishal;
+import java.util.ArrayList;
+
+import arrays.ArraysOfVishal;
 import utilsOfVishal.UtilsOfVishal;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        int[] a = { 7, 5, 1, 6, 9, 10, 45, 10 };
-
-        SortOfVishal.quickSort(a);
-        UtilsOfVishal.printArray(a);
+        int[] a = { 1, 1, 1 };
+        int[] b = { 2, 2, 2 };
+        ArraysOfVishal.moveZeroesToEndInArrays(a);
+        ArrayList<Integer> union = ArraysOfVishal.getUnionOfTwoSortedArraysWithDuplicates(a, b);
+        System.out.println(union.toString());
 
     }
 }
